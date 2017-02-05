@@ -43,3 +43,5 @@ class Solution(object):
         res.append(1)
         return res
         
+s = Solution()
+print s.generate(5)

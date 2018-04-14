@@ -42,7 +42,6 @@ class Solution(object):
             nums1[k] = nums2[j]
             j -= 1
             k -= 1
-        print(nums1)
         
 s = Solution()
 nums1 = [0]

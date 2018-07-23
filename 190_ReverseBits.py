@@ -18,7 +18,6 @@ class Solution:
     # @return an integer
     def reverseBits(self, n):
         result = 0
-        print(bin(n))
         i=0
         while i < 32:
             right_bit = n & 1

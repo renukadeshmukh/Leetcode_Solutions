@@ -26,6 +26,11 @@ Note:
 0 <= shifts[i] <= 10 ^ 9
 '''
 
+'''
+RUNTIME COMPLEXITY : O(n)
+SPACE COMPLEXITY : O(1)
+'''
+
 class Solution(object):
     def shiftingLetters(self, S, shifts):
         """

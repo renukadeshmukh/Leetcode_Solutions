@@ -43,6 +43,15 @@ Note:
 
 '''
 
+'''
+ALGORITHM:
+1. Get binary represeantation b of N
+2. Iterate on b and keep track of distance between 1's
+3. return max distance
+
+TIME COMPLEXITY: O(1) as binary representation of a number can be max 32 bit
+SPACE COMPLEXITY: O(1)
+'''
 
 class Solution(object):
     def binaryGap(self, N):

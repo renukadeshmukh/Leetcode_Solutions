@@ -22,9 +22,10 @@ A is sorted in non-decreasing order.
 ALGORITHM:
 1. Keep two pointers, i=0 and j= len-1
 2. res = [], k = len-1
-3. if A[i]*A[i] > A[j]*A[j], copy the A[i]*A[i] at res[k] and inc i
-4. Else copy  A[j]*A[j] at res[k] and dec j
-5. dec k
+3. while i <= j
+4.  if A[i]*A[i] > A[j]*A[j], copy the A[i]*A[i] at res[k] and inc i
+5.  Else copy  A[j]*A[j] at res[k] and dec j
+6.  dec k
 RUNTIME COMPLEXITY: O(N)
 SPACE COMPLEXITY: O(1)
 '''

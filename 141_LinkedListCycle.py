@@ -6,11 +6,14 @@ Given a linked list, determine if it has a cycle in it.
 Follow up:
 Can you solve it without using extra space?
 
-Solution:
+ALGORITHM:
 Use the Hare and Tortoise approach. 
 1. The fast pointer(hare) umpts 2 nodes but the slow pointer(tortoise) jumps one node at a time. 
 2. If fast pointer become null, then no loop.
 3. Else if fast == slow, then loop detected.
+
+RUNTIME COMPLEXITY: O(N)
+SPACE COMPLEXITY: O(1)
 '''
 
 # Definition for singly-linked list.
@@ -25,23 +28,16 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        if head == None or head.next == None:
-            return False
-        if head.next == head:
-            return True
-        slow = head
-        fast = head
+        slow = fast = head
         isCyclic = False
-        while True:
-            if fast == None or fast.next == None:
-                break
+        while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
             if fast == slow:
                 isCyclic = True
                 break
 
-        return isCycli
+        return isCyclic
 
 
 node1 = ListNode(1)

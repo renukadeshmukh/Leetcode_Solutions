@@ -29,7 +29,7 @@ ALGORITHM:
 RUNTIME COMPLEXITY: O(NLOGN)
 SPACE COMPLEXITY: O(N)
 '''
-
+import copy
 class Solution(object):
     def heightChecker(self, heights):
         """
@@ -44,3 +44,7 @@ class Solution(object):
             if h_copy[i] != heights[i]:
                 result += 1
         return result
+
+s = Solution()
+result = s.heightChecker([1,1,4,2,1,3])
+print(result)

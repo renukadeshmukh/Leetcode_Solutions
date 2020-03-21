@@ -1,9 +1,25 @@
 '''
 500. Keyboard Row
 
-Given a List of words, return the words that can be typed using letters of alphabet on only one row's of 
-American keyboard
+Given a List of words, return the words that can be typed using letters of 
+alphabet on only one row's of American keyboard.
 
+Example:
+Input: ["Hello", "Alaska", "Dad", "Peace"]
+Output: ["Alaska", "Dad"]
+ 
+Note:
+You may use one character in the keyboard more than once.
+You may assume the input string will only contain letters of alphabet.
+'''
+
+'''
+ALGORITHM
+1. For 3 rows in keyboard, create 3 sets for characters from each row.
+2. Check if every word belongs to one set only. 
+
+RUNTIME COMPLEXITY: O(N*M) for n words of avg length m
+SPACE COMPLEXITY: O(26*2) to store capital and small letters
 '''
 
 class Solution(object):

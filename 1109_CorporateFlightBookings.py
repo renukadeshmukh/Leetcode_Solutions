@@ -26,7 +26,8 @@ ALGORITHM:
     end[j] += k
 3. For answer[m] = answer[m-1] + start[m] - end[m]
    i.e., answer[m] = answer for previous flight + any new flights starting at 
-   m - any flights ending at m
+   m - any flights ending at m-1
+   answer[i] = answer[i-1] + start[i] - end[i-1]
 
 RUNTIME COMPLEXITY: O(N)
 SPACE COMPLEXITY: O(N)
